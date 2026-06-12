@@ -131,20 +131,10 @@ const Footer = () => {
 
                             <div className="flex items-center gap-3">
 
-                                <FaEnvelope />
-
-                                <span>
-                                    support@astrogemai.com
-                                </span>
-
-                            </div>
-
-                            <div className="flex items-center gap-3">
-
                                 <FaGithub />
 
                                 <span>
-                                    github.com/yourusername
+                                    github.com/BhavikKumar7/ASTROGEM-AI
                                 </span>
 
                             </div>
@@ -154,7 +144,7 @@ const Footer = () => {
                                 <FaLinkedin />
 
                                 <span>
-                                    linkedin.com/in/yourprofile
+                                    linkedin.com/in/bhavik-kumar-rajput/
                                 </span>
 
                             </div>

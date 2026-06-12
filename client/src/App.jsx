@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 
 import Home from "./pages/public/Home";
 import Login from "./pages/public/Login";
@@ -16,8 +17,14 @@ import Users from "./pages/admin/Users.jsx";
 import UserDetails from "./pages/admin/UserDetails.jsx";
 import UserConsultations from "./pages/admin/UserConsultations.jsx";
 
+import wakeUpServer from "./services/wakeUpService";
+
 
 function App() {
+
+  useEffect(() => {
+    wakeUpServer();
+  }, []);
 
   return (
     <BrowserRouter>
@@ -109,7 +116,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        
+
       </Routes>
     </BrowserRouter>
   );
